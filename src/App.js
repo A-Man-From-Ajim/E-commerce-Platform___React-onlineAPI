@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
+    HashRouter,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -16,7 +17,7 @@ const App = () => {
 
 
     return (
-        <Router>
+        <HashRouter  >
             <Navbar />
             <Routes>
                 <Route
@@ -33,7 +34,7 @@ const App = () => {
                 <Route path="/checkout" element={<Checkout inCart={inCart} />} />
             </Routes>
             <Footer />
-        </Router>
+        </HashRouter>
     );
 };
 
