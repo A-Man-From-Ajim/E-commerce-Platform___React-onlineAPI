@@ -19,22 +19,25 @@ const App = () => {
 
     return (
         <>
-            <Navbar />
-            <Routes>
-                <Route
-                    path="/"
-                    element={<Home updateCart={updateCart} />} />
-                <Route
-                    path="/cart"
-                    element={<Cart inCart={inCart} updateCart={updateCart} />}
-                />
-                <Route
-                    path="/product/:id"
-                    element={<ProductDetail />}
-                />
-                <Route path="/checkout" element={<Checkout inCart={inCart} />} />
-            </Routes>
-            <Footer />
+            <HashRouter>
+
+                <Navbar />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<Home updateCart={updateCart} />} />
+                    <Route
+                        path="/cart"
+                        element={<Cart inCart={inCart} updateCart={updateCart} />}
+                    />
+                    <Route
+                        path="/product/:id"
+                        element={<ProductDetail />}
+                    />
+                    <Route path="/checkout" element={<Checkout inCart={inCart} />} />
+                </Routes>
+                <Footer />
+            </HashRouter>
         </>
 
     );
