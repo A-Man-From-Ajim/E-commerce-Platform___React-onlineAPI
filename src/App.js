@@ -19,7 +19,7 @@ const App = () => {
 
     return (
         <>
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router basename="/E-commerce_React-fakeAPI/">
 
                 <Navbar />
                 <Routes>
