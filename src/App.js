@@ -18,7 +18,7 @@ const App = () => {
 
 
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <>
             <Navbar />
             <Routes>
                 <Route
@@ -35,7 +35,8 @@ const App = () => {
                 <Route path="/checkout" element={<Checkout inCart={inCart} />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </>
+
     );
 };
 
