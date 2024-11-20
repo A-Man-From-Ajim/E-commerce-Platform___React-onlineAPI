@@ -19,7 +19,7 @@ const App = () => {
 
     return (
         <>
-            <HashRouter>
+            <Router basename={process.env.PUBLIC_URL}>
 
                 <Navbar />
                 <Routes>
@@ -37,7 +37,7 @@ const App = () => {
                     <Route path="/checkout" element={<Checkout inCart={inCart} />} />
                 </Routes>
                 <Footer />
-            </HashRouter>
+            </Router>
         </>
 
     );
