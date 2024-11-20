@@ -10,12 +10,6 @@ const Home = ({ updateCart }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                // const response = await fetch(
-                //     `${process.env.REACT_APP_API_URL}/api/products`
-                // );
-                // const data = await response.json();
-                // setProducts(data);
-                // setFilteredproducts(data);
                 const response = await fetch(
                     `https://fakestoreapi.com/products`
                 );
