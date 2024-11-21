@@ -19,7 +19,7 @@ const App = () => {
 
     return (
         <>
-            <Router basename="/E-commerce_React-fakeAPI/">
+            <Router basename="/E-commerce-Platform___React-onlineAPI/">
 
                 <Navbar />
                 <Routes>
